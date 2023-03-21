@@ -1,3 +1,12 @@
-const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
-
-// Code your solution here
+const batteryBatches = [ 
+    { batteryAmount: 10 },
+    { batteryAmount: 20 },
+    { batteryAmount: 30 }
+  ];
+  
+  const totalBatteries = batteryBatches.reduce((totalBatteries, batch) => {
+    return totalBatteries + batch.batteryAmount;
+  }, 0);
+  
+  console.log(totalBatteries); // Output: 60
+  
